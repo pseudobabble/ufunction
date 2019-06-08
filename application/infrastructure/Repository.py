@@ -1,4 +1,5 @@
 #!/usr/bin/env python2
+from django.core.exceptions import ObjectDoesNotExist
 
 
 class Repository(object):
@@ -21,7 +22,12 @@ class Repository(object):
         :param id: integer
         :return: object
         """
-        return self.model.objects.get(id=id)
+        try:
+            obj = self.model.objects.get(id=id)
+        except ObjectDoesNotExist:
+            obj = None
+
+        return obj
 
     def get_by(self, field_name_query_value_dict):
         """
@@ -37,6 +43,6 @@ class Repository(object):
         """
         if not isinstance(model, self.model):
             raise TypeError(
-                'Attempted to save a {} using the GoalRepository, please use the appropriate Repository instead'
+                'Attempted to save a {} using the GoalRepository, please use the appropriate Repository instead'.format(model)
             )
         model.save()

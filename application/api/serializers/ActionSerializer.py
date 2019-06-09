@@ -6,7 +6,7 @@ from application.api.serializers.IntentionSerializer import IntentionSerializer
 from domain.achievement.models.Goal.Action import Action
 
 
-class ActionSerializer(serializers.ModelSerializer):
+class ActionSerializer(serializers.HyperlinkedModelSerializer):
     intentions = IntentionSerializer(many=True, required=False)
 
     class Meta:

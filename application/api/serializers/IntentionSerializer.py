@@ -6,7 +6,7 @@ from application.api.serializers.MeasurementSerializer import MeasurementSeriali
 from domain.achievement.models.Goal.Intention import Intention
 
 
-class IntentionSerializer(serializers.ModelSerializer):
+class IntentionSerializer(serializers.HyperlinkedModelSerializer):
     measurements = MeasurementSerializer(many=True, required=False)
 
     class Meta:

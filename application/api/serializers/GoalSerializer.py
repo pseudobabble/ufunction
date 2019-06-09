@@ -6,17 +6,11 @@ from domain.achievement.models.Goal.Goal import Goal
 from application.api.serializers.ActionSerializer import ActionSerializer
 
 
-class GoalSerializer(serializers.HyperlinkedModelSerializer):
-    actions = ActionSerializer(many=True)
+class GoalSerializer(serializers.ModelSerializer):
+    actions = ActionSerializer(many=True, required=False)
 
     class Meta:
         model = Goal
         fields = (
-            'title',
-            'end_state_description',
-            'target_date',
-            'complete',
-            'created_date',
-            'updated_date',
-            'actions'
+            '__all__'
         )

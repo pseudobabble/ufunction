@@ -2,19 +2,15 @@
 
 from rest_framework import serializers
 
+from application.api.serializers.IntentionSerializer import IntentionSerializer
 from domain.achievement.models.Goal.Action import Action
 
 
-class ActionSerializer(serializers.HyperlinkedModelSerializer):
-
+class ActionSerializer(serializers.ModelSerializer):
+    intentions = IntentionSerializer(many=True, required=False)
 
     class Meta:
         model = Action
         fields = (
-            'goal',
-            'action_name',
-            'target_metric',
-            'target_metric_unit',
-            'created_date',
-            'updated_date',
+            '__all__'
         )

@@ -164,6 +164,30 @@
     }
   },
   {
+    "model": "achievement.action",
+    "pk": 6,
+    "fields": {
+      "goal": 1,
+      "action_name": "a sixth action",
+      "target_metric": 50.0,
+      "target_metric_unit": "miles",
+      "created_date": "2019-06-09T08:15:10.522Z",
+      "updated_date": "2019-06-09T08:15:10.523Z"
+    }
+  },
+  {
+    "model": "achievement.action",
+    "pk": 7,
+    "fields": {
+      "goal": 1,
+      "action_name": "number 7",
+      "target_metric": 12.0,
+      "target_metric_unit": "au",
+      "created_date": "2019-06-09T08:58:18.272Z",
+      "updated_date": "2019-06-09T08:58:18.272Z"
+    }
+  },
+  {
     "model": "achievement.goal",
     "pk": 1,
     "fields": {
@@ -173,6 +197,56 @@
       "complete": false,
       "created_date": "2019-06-08T22:46:07.754Z",
       "updated_date": "2019-06-08T22:46:07.754Z"
+    }
+  },
+  {
+    "model": "achievement.goal",
+    "pk": 2,
+    "fields": {
+      "title": "another goal",
+      "end_state_description": "another goal",
+      "target_date": "2034-01-01",
+      "complete": true,
+      "created_date": "2019-06-09T09:34:18.216Z",
+      "updated_date": "2019-06-09T09:34:18.216Z"
+    }
+  },
+  {
+    "model": "achievement.intention",
+    "pk": 1,
+    "fields": {
+      "action": 1,
+      "intention": "i intend this",
+      "intended_metric": 2.0,
+      "enjoyable_aspects": "the fun part",
+      "created_date": "2019-06-09T08:27:24.401Z",
+      "updated_date": "2019-06-09T08:27:24.401Z"
+    }
+  },
+  {
+    "model": "achievement.intention",
+    "pk": 2,
+    "fields": {
+      "action": 3,
+      "intention": "something else",
+      "intended_metric": 60.0,
+      "enjoyable_aspects": "many times",
+      "created_date": "2019-06-09T08:38:54.385Z",
+      "updated_date": "2019-06-09T08:38:54.385Z"
+    }
+  },
+  {
+    "model": "achievement.measurement",
+    "pk": 1,
+    "fields": {
+      "action": 1,
+      "intention": 1,
+      "outcome_metric": 45.0,
+      "enjoyable_aspects": "fun stuff",
+      "difficult_aspects": "hard stuff",
+      "overcoming_difficult_aspects": "I did stuff",
+      "created_date": "2019-06-09T08:51:27.793Z",
+      "updated_date": "2019-06-09T08:51:27.793Z"
     }
   },
   {

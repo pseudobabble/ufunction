@@ -18,16 +18,14 @@ from django.contrib import admin
 from rest_framework import routers
 
 from application.api.views.GoalView import GoalViewSet
-from application.api.views.ActionView import ActionViewSet
 
 
 router = routers.DefaultRouter()
 router.register('goals', GoalViewSet)
-router.register('actions', ActionViewSet, basename='Action')
 
 
 urlpatterns = [
     url('', include(router.urls)),
     url(r'^admin/', admin.site.urls),
-    url(r'^api-auth/', include('rest_framework.urls'))
+    url(r'^api-auth/', include('rest_framework.urls')),
 ]

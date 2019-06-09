@@ -11,4 +11,13 @@ class IntentionSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Intention
-        fields = '__all__'
+        fields = [
+            'id',
+            'action',
+            'intention',
+            'intended_metric',
+            'enjoyable_aspects',
+            'created_date',
+            'updated_date',
+            'measurements'
+        ]

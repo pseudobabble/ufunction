@@ -1,0 +1,11 @@
+SERVER:
+Add ordering to all models
+Add Frequency field to action - necessary for progress against goal
+Create services to create chart data, plus required API infrastructure
+
+
+CLIENT:
+Create resources for each endpoint
+Create lists from the listguesser for each endpoint
+Customise each list to show what you want
+Create Charts for Intention Alignment and Progress vs Goal

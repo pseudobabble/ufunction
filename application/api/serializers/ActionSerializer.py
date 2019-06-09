@@ -12,5 +12,12 @@ class ActionSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Action
         fields = (
-            '__all__'
+            'id',
+            'goal',
+            'action_name',
+            'target_metric',
+            'target_metric_unit',
+            'created_date',
+            'updated_date',
+            'intentions'
         )

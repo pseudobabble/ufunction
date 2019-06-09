@@ -40,9 +40,11 @@ INSTALLED_APPS = [
     'django_filters',
     'domain.achievement.apps.AchievementConfig',
     'domain.workout',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -123,3 +125,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+CORS_ORIGIN_ALLOW_ALL = True # TODO deploy 09/06/2019 18:22: need to get this to work with whitelisting
+
+CORS_ORIGIN_WHITELIST = [
+    'http://127.0.0.1:8000'
+]
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 100
+}

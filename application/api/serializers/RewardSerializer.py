@@ -8,4 +8,13 @@ from domain.achievement.models.Goal.Reward import Reward
 class RewardSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Reward
-        fields = '__all__'
+        fields = [
+            'id',
+            'goal',
+            'reward_title',
+            'reward_description',
+            'achievement_metric',
+            'obtained',
+            'created_date',
+            'updated_date'
+        ]

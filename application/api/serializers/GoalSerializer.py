@@ -12,5 +12,11 @@ class GoalSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Goal
         fields = (
-            '__all__'
+            'id',
+            'end_state_description',
+            'target_date',
+            'complete',
+            'created_date',
+            'updated_date',
+            'actions'
         )

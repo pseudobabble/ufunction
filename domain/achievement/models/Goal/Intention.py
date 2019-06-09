@@ -16,4 +16,4 @@ class Intention(models.Model):
         ordering = ("created_date", "action",)
 
     def __unicode__(self):
-        return u"%s" % (self.createdate)
+        return u"%s" % (self.created_date)

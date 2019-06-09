@@ -18,10 +18,19 @@ from django.contrib import admin
 from rest_framework import routers
 
 from application.api.views.GoalView import GoalViewSet
-
+from application.api.views.ActionView import ActionViewSet
+from application.api.views.IntentionView import IntentionViewSet
+from application.api.views.MeasurementView import MeasurementViewSet
+from application.api.views.ReviewView import ReviewViewSet
+from application.api.views.RewardView import RewardViewSet
 
 router = routers.DefaultRouter()
 router.register('goals', GoalViewSet)
+router.register('actions', ActionViewSet)
+router.register('intentions', IntentionViewSet)
+router.register('measurements', MeasurementViewSet)
+router.register('reviews', ReviewViewSet)
+router.register('rewards', RewardViewSet)
 
 
 urlpatterns = [

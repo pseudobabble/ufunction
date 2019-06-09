@@ -11,3 +11,10 @@ class Action(models.Model):
     created_date = models.DateTimeField(u"Date Created", auto_now_add=True)
     updated_date = models.DateTimeField(u"Date Updated", auto_now=True)
 
+    class Meta:
+        verbose_name = u"Action"
+        verbose_name_plural = u"Actions"
+        # ordering = ("-sticky", "-date",)
+
+    def __unicode__(self):
+        return u"%s" % (self.action_name)

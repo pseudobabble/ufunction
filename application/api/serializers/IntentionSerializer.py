@@ -3,7 +3,7 @@
 from rest_framework import serializers
 
 from application.api.serializers.MeasurementSerializer import MeasurementSerializer
-from domain.achievement.models.Goal.Intention import Intention
+from domain.achievement.models.Intention import Intention
 
 
 class IntentionSerializer(serializers.HyperlinkedModelSerializer):

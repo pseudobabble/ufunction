@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 from django_filters.rest_framework import FilterSet
 
-from domain.achievement.models.Goal.Review import Review
+from domain.achievement.models.Review import Review
 
 
 class ReviewFilter(FilterSet):

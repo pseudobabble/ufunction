@@ -4,7 +4,7 @@ from rest_framework import viewsets
 
 from application.api.filters.ReviewFilter import ReviewFilter
 from application.api.serializers.ReviewSerializer import ReviewSerializer
-from domain.achievement.models.Goal.Review import Review
+from domain.achievement.models.Review import Review
 
 
 class ReviewViewSet(viewsets.ModelViewSet):

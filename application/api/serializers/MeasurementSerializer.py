@@ -2,7 +2,7 @@
 
 from rest_framework import serializers
 
-from domain.achievement.models.Goal.Measurement import Measurement
+from domain.achievement.models.Measurement import Measurement
 
 
 class MeasurementSerializer(serializers.HyperlinkedModelSerializer):

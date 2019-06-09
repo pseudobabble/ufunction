@@ -2,7 +2,7 @@
 
 from django_filters.rest_framework import FilterSet
 
-from domain.achievement.models.Goal.Measurement import Measurement
+from domain.achievement.models.Measurement import Measurement
 
 
 class MeasurementFilter(FilterSet):

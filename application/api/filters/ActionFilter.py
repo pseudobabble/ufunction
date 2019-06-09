@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 from django_filters.rest_framework import FilterSet
 
-from domain.achievement.models.Goal.Action import Action
+from domain.achievement.models.Action import Action
 
 
 class ActionFilter(FilterSet):

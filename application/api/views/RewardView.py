@@ -4,7 +4,7 @@ from rest_framework import viewsets
 
 from application.api.filters.RewardFilter import RewardFilter
 from application.api.serializers.RewardSerializer import RewardSerializer
-from domain.achievement.models.Goal.Reward import Reward
+from domain.achievement.models.Reward import Reward
 
 
 class RewardViewSet(viewsets.ModelViewSet):

@@ -2,7 +2,7 @@
 
 from application.infrastructure.Repository import Repository
 
-from domain.achievement.models.Goal.Goal import Goal
+from domain.achievement.models.Goal import Goal
 
 
 GoalRepository = Repository(Goal)

@@ -4,7 +4,7 @@ from rest_framework import viewsets
 
 from application.api.filters.ActionFilter import ActionFilter
 from application.api.serializers.ActionSerializer import ActionSerializer
-from domain.achievement.models.Goal.Action import Action
+from domain.achievement.models.Action import Action
 
 
 class ActionViewSet(viewsets.ModelViewSet):

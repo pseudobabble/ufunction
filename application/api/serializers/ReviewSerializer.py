@@ -2,7 +2,7 @@
 
 from rest_framework import serializers
 
-from domain.achievement.models.Goal.Review import Review
+from domain.achievement.models.Review import Review
 
 
 class ReviewSerializer(serializers.HyperlinkedModelSerializer):

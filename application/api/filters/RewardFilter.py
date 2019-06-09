@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 from django_filters.rest_framework import FilterSet
 
-from domain.achievement.models.Goal.Reward import Reward
+from domain.achievement.models.Reward import Reward
 
 
 class RewardFilter(FilterSet):

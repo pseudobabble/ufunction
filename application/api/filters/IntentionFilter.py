@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 from django_filters.rest_framework import FilterSet
 
-from domain.achievement.models.Goal.Intention import Intention
+from domain.achievement.models.Intention import Intention
 
 
 class IntentionFilter(FilterSet):

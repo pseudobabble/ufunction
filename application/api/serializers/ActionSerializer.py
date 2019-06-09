@@ -3,7 +3,7 @@
 from rest_framework import serializers
 
 from application.api.serializers.IntentionSerializer import IntentionSerializer
-from domain.achievement.models.Goal.Action import Action
+from domain.achievement.models.Action import Action
 
 
 class ActionSerializer(serializers.HyperlinkedModelSerializer):

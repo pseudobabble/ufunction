@@ -4,7 +4,7 @@ from rest_framework import viewsets
 
 from application.api.filters.GoalFilter import GoalFilter
 from application.api.serializers.GoalSerializer import GoalSerializer
-from domain.achievement.models.Goal.Goal import Goal
+from domain.achievement.models.Goal import Goal
 
 
 class GoalViewSet(viewsets.ModelViewSet):

@@ -2,7 +2,7 @@
 
 from rest_framework import serializers
 
-from domain.achievement.models.Goal.Goal import Goal
+from domain.achievement.models.Goal import Goal
 from application.api.serializers.ActionSerializer import ActionSerializer
 
 

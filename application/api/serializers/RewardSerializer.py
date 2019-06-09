@@ -2,7 +2,7 @@
 
 from rest_framework import serializers
 
-from domain.achievement.models.Goal.Reward import Reward
+from domain.achievement.models.Reward import Reward
 
 
 class RewardSerializer(serializers.HyperlinkedModelSerializer):

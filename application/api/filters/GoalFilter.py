@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 from django_filters.rest_framework import FilterSet
 
-from domain.achievement.models.Goal.Goal import Goal
+from domain.achievement.models.Goal import Goal
 
 
 class GoalFilter(FilterSet):

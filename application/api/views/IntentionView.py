@@ -4,7 +4,7 @@ from rest_framework import viewsets
 
 from application.api.filters.IntentionFilter import IntentionFilter
 from application.api.serializers.IntentionSerializer import IntentionSerializer
-from domain.achievement.models.Goal.Intention import Intention
+from domain.achievement.models.Intention import Intention
 
 
 class IntentionViewSet(viewsets.ModelViewSet):

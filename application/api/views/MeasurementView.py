@@ -4,7 +4,7 @@ from rest_framework import viewsets
 
 from application.api.filters.MeasurementFilter import MeasurementFilter
 from application.api.serializers.MeasurementSerializer import MeasurementSerializer
-from domain.achievement.models.Goal.Measurement import Measurement
+from domain.achievement.models.Measurement import Measurement
 
 
 class MeasurementViewSet(viewsets.ModelViewSet):

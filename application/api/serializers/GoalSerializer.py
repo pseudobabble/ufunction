@@ -13,6 +13,7 @@ class GoalSerializer(serializers.HyperlinkedModelSerializer):
         model = Goal
         fields = (
             'id',
+            'title',
             'end_state_description',
             'target_date',
             'complete',

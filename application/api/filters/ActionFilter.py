@@ -9,7 +9,8 @@ class ActionFilter(FilterSet):
         model = Action
         fields = [
             'goal',
-            'action_name',
+            'action_verb',
+            'activity',
             'target_metric',
             'target_metric_unit',
             'created_date',

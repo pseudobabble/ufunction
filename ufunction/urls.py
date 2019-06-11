@@ -23,6 +23,7 @@ from application.api.views.IntentionView import IntentionViewSet
 from application.api.views.MeasurementView import MeasurementViewSet
 from application.api.views.ReviewView import ReviewViewSet
 from application.api.views.RewardView import RewardViewSet
+from application.api.views.GoalProgressView import GoalProgressViewSet
 
 router = routers.DefaultRouter()
 router.register('goals', GoalViewSet)
@@ -31,6 +32,8 @@ router.register('intentions', IntentionViewSet)
 router.register('measurements', MeasurementViewSet)
 router.register('reviews', ReviewViewSet)
 router.register('rewards', RewardViewSet)
+
+router.register(r'progress', GoalProgressViewSet, basename='progress')
 
 
 urlpatterns = [

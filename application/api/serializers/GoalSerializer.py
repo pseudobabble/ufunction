@@ -11,8 +11,10 @@ class GoalSerializer(serializers.ModelSerializer):
         fields = (
             'id',
             'title',
-            'end_state_description',
+            'stative_verb',
+            'status',
             'target_date',
+            'end_state_description',
             'complete',
             'created_date',
             'updated_date',

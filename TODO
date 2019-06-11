@@ -1,13 +1,20 @@
 SERVER:
 Add ordering to all models
-Goals are state definitions: Be, have X by Z date
-Refactor Goal to have fields
-Actions are performed to transition from current state to goal state
-Refactor Action to have fields Action Verb + Activity + Target Measurement/Target Measurement Unit
+Goals are state definitions - they use *Stative verbs*: Be, have, understand, satisfy X-condition by Z date
+https://en.wikipedia.org/wiki/Stative_verb
+
+Refactor Goal to have fields:
+- Status Verb (Be or Have)
+- Status
+- Target Date
+--
+Actions are performed to transition from current state to goal state - they are *Dynamic verbs*
+https://en.wikipedia.org/wiki/Dynamic_verb
+Refactor Action to have fields Action Verb + Activity which moves you toward the goal + Target Measurement/Target Measurement Unit
 -- Reduce + Calorie intake + to 2000kcal/Day
 -- Increase + Squat weight + to 70kg/Squat
 -- Maintain + Meditation time + at 40mins/Day
-Add Frequency field to action - necessary for progress against goal
+
 Create services to create chart data, plus required API infrastructure
 
 

@@ -5,7 +5,7 @@ from rest_framework import serializers
 from domain.achievement.models.Reward import Reward
 
 
-class RewardSerializer(serializers.HyperlinkedModelSerializer):
+class RewardSerializer(serializers.ModelSerializer):
     class Meta:
         model = Reward
         fields = [

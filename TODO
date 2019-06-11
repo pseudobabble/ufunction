@@ -1,14 +1,21 @@
 SERVER:
 Add ordering to all models
+Goals are state definitions: Be, have X by Z date
+Refactor Goal to have fields
+Actions are performed to transition from current state to goal state
+Refactor Action to have fields Action Verb + Activity + Target Measurement/Target Measurement Unit
+-- Reduce + Calorie intake + to 2000kcal/Day
+-- Increase + Squat weight + to 70kg/Squat
+-- Maintain + Meditation time + at 40mins/Day
 Add Frequency field to action - necessary for progress against goal
 Create services to create chart data, plus required API infrastructure
 
 
 CLIENT:
-Create resources for each endpoint
-Create lists from the listguesser for each endpoint
 Customise each list to show what you want
+-- titles on each list
+Create create buttons for actions, reviews, rewards on goaledit
 Create Charts for Intention Alignment and Progress vs Goal
 Customise forms
-Create dates default to today, are read only
-Update dates always read only
+-- Fields showing parent ids should be ReferenceFields enclosing TextFields
+Create Dashboard with chart allowing selection of goal, then shows Progress, and intention alignment

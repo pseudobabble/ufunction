@@ -9,7 +9,7 @@ class IntentionFilter(FilterSet):
         model = Intention
         fields = [
             'action',
-            'intention',
+            'intention_text',
             'intended_metric',
             'enjoyable_aspects',
             'created_date',

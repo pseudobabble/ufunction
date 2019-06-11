@@ -3,12 +3,9 @@
 from rest_framework import serializers
 
 from domain.achievement.models.Goal import Goal
-from application.api.serializers.ActionSerializer import ActionSerializer
 
 
-class GoalSerializer(serializers.HyperlinkedModelSerializer):
-    actions = ActionSerializer(many=True, required=False)
-
+class GoalSerializer(serializers.ModelSerializer):
     class Meta:
         model = Goal
         fields = (
@@ -19,5 +16,4 @@ class GoalSerializer(serializers.HyperlinkedModelSerializer):
             'complete',
             'created_date',
             'updated_date',
-            'actions'
         )

@@ -2,22 +2,19 @@
 
 from rest_framework import serializers
 
-from application.api.serializers.MeasurementSerializer import MeasurementSerializer
 from domain.achievement.models.Intention import Intention
 
 
-class IntentionSerializer(serializers.HyperlinkedModelSerializer):
-    measurements = MeasurementSerializer(many=True, required=False)
+class IntentionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Intention
         fields = [
             'id',
             'action',
-            'intention',
+            'intention_text',
             'intended_metric',
             'enjoyable_aspects',
             'created_date',
             'updated_date',
-            'measurements'
         ]

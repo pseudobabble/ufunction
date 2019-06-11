@@ -4,7 +4,7 @@ from django.db import models
 
 class Intention(models.Model):
     action = models.ForeignKey('Action', verbose_name=u"Action", related_name="intentions")
-    intention = models.CharField(u"Todays Intention", max_length=1000, help_text='What will you do today to bring you closer to your goal?')
+    intention_text = models.CharField(u"Todays Intention", max_length=1000, help_text='What will you do today to bring you closer to your goal?')
     intended_metric = models.FloatField(u"Intended Metric", help_text='How much/many times will you perform the action?')
     enjoyable_aspects = models.CharField(u"What do you enjoy about this activity?", max_length=1000)
     created_date = models.DateTimeField(u"Date Created", auto_now_add=True)

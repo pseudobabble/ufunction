@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 
+from corsheaders.defaults import default_headers
+
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -131,6 +134,17 @@ CORS_ORIGIN_WHITELIST = [
     'http://127.0.0.1:8000'
 ]
 
+
+# CORS_ALLOW_HEADERS = list(default_headers) + [
+#     'Content-Range',
+# ]
+#
+
+# CORS_EXPOSE_HEADERS = [
+#     'Content-Range: bytes : 0-9/*',
+# ]
+#
+# CORS_PREFLIGHT_MAX_AGE = False  # Forever
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',

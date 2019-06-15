@@ -18,7 +18,6 @@ class GoalProgressViewSet(ViewSet):
         return Response(serializer.data)
 
     def retrieve(self, request, pk=None):
-        # goal_id = request.query_params.get('id')
         goal_progress_provider = GoalProgressDataProvider()
         goal_progress = goal_progress_provider.get_progress_for_goal(pk)
         serializer = GoalProgressSerializer(

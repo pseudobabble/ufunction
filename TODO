@@ -2,6 +2,8 @@ SERVER:
 Add ordering to all models
 Goals are state definitions - they use *Stative verbs*: Be, have, understand, satisfy X-condition by Z date
 https://en.wikipedia.org/wiki/Stative_verb
+Maintenance goals do not require an end date. They can have one (Maintain X-condition until z date), but they
+can be indefinite (Maintain X-condition forever)
 
 
 Actions are performed to transition from current state to goal state - they are *Dynamic verbs*
@@ -11,7 +13,12 @@ Refactor Action to have fields Action Verb + Activity which moves you toward the
 -- Increase + Squat weight + to 70kg/Squat
 -- Maintain + Meditation time + at 40mins/Day
 
+-- Create a title dynamic property on Action
 Create services to create chart data, plus required API infrastructure
+-- Create Progress against goal
+--- Add Goal id, action id, measurement id
+--- Add Pagination
+--- Create Filter
 
 
 CLIENT:

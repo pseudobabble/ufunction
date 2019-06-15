@@ -13,7 +13,13 @@ class GoalProgressDataProvider:
             if goal:
                 for action in goal.actions.all():
                     for measurement in action.measurements.all():
-                        progress_point = ProgressPoint(action.target_metric, measurement.outcome_metric)
+                        progress_point = ProgressPoint(
+                            action.target_metric,
+                            measurement.outcome_metric,
+                            goal.id,
+                            action.id,
+                            measurement.id
+                        )
                         progress.append(progress_point)
         return progress
 
@@ -23,7 +29,13 @@ class GoalProgressDataProvider:
         for goal in goals:
             for action in goal.actions.all():
                 for measurement in action.measurements.all():
-                    progress_point = ProgressPoint(action.target_metric, measurement.outcome_metric)
+                    progress_point = ProgressPoint(
+                        action.target_metric,
+                        measurement.outcome_metric,
+                        goal.id,
+                        action.id,
+                        measurement.id
+                    )
                     progress.append(progress_point)
         return progress
 

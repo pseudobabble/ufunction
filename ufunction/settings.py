@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'domain.achievement.apps.AchievementConfig',
     'domain.workout',
     'corsheaders',
+    'rest_framework.authtoken'
 ]
 
 MIDDLEWARE = [
@@ -140,11 +141,6 @@ CORS_ORIGIN_WHITELIST = [
 # ]
 #
 
-# CORS_EXPOSE_HEADERS = [
-#     'Content-Range: bytes : 0-9/*',
-# ]
-#
-# CORS_PREFLIGHT_MAX_AGE = False  # Forever
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',

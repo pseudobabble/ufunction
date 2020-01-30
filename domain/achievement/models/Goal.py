@@ -29,7 +29,7 @@ class Goal(models.Model):
 
     @property
     def title(self):
-        return '{} {} {}'.format(self.stative_verb, self.status, self.target_date)
+        return '{} {} by {}'.format(self.stative_verb, self.status, self.target_date)
 
     class Meta:
         verbose_name = u"Goal"

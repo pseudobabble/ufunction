@@ -10,12 +10,17 @@ class GoalSerializer(serializers.ModelSerializer):
         model = Goal
         fields = (
             'id',
+            'parent_goal',
             'title',
-            'stative_verb',
-            'status',
+            'verb',
+            'verb_phrase',
             'target_date',
             'end_state_description',
+            'urgency',
+            'importance',
+            'eisenhower_score',
             'complete',
             'created_date',
             'updated_date',
+            # 'subgoals'
         )

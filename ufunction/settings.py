@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'domain.achievement.apps.AchievementConfig',
     'domain.workout',
     'corsheaders',
-    'rest_framework.authtoken'
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -133,6 +133,7 @@ CORS_ORIGIN_ALLOW_ALL = True # TODO deploy 09/06/2019 18:22: need to get this to
 
 CORS_ORIGIN_WHITELIST = [
     'http://127.0.0.1:8000'
+#     the url of the frontend
 ]
 
 
@@ -146,3 +147,6 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 100
 }
+
+FAKER_LOCALE = 'en-gb'     # settings.LANGUAGE_CODE is loaded
+FAKER_PROVIDERS = None  # faker.DEFAULT_PROVIDERS is loaded (all)

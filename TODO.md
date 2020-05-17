@@ -3,12 +3,13 @@
 ## Goals:
 - Goals are state definitions - they use *Stative verbs*: Be, have, understand. Goals satisfy X-condition by Y date.
 - https://en.wikipedia.org/wiki/Stative_verb
+- Goals can be broken
 - Actions are performed to transition from current state to goal state - they are *Dynamic verbs*
 
 ## Actions
-- Actions are performed every day until the desired metric is reached.
+- Actions are performed every period until the desired metric is reached.
 - https://en.wikipedia.org/wiki/Dynamic_verb
-- Actions contain Intentions and Measurements.
+- Actions are related to Intentions and Measurements.
 
 ## Intentions:
 - Intentions are daily commitments to carry out the action, with metrics to track progress.
@@ -32,28 +33,47 @@ then once the target metric on that is reached, create a 'maintain' action, and 
 - Maintain + Net Worth + at £50,000
 
 
-# SERVER:
-##################################
-#### REWRITE FOR PYTHON 3!!! #####
-##################################
-Add ordering to all models
+# Server:
+- REWRITE FOR PYTHON 3
 
 
 
-- Create a title dynamic property on Action
-- Create services to create chart data, plus required API infrastructure
-- Create Progress against goal
-- Add Goal id, action id, measurement id
-- Add Pagination
-- Create Filter
-
-
-#CLIENT:
-- Customise each list to show what you want
+#Client:
+- Add custom menu
+    - Nestable menu items
+    - Custom menu items
+    - switch menu based on selection of module
 - titles on each list
-- Create create buttons for actions, reviews, rewards on goaledit
-- Create Charts for Intention Alignment and Progress vs Goal
 - Customise forms
-- Fields showing parent ids should be ReferenceFields enclosing TextFields
+    - Fields showing parent ids should be ReferenceFields enclosing TextFields
+    - Expand datagrid rows for sub-views (eg subgoals on goaledit)
 - Create Dashboard with chart allowing selection of goal, then shows Progress, and intention alignment
-- make charts resizeable with https://github.com/STRML/react-grid-layout
+- make all datagrid rows clickable
+- make all datagrid rows expandable
+
+#MODULES:
+- Achievement
+    - Subgoal refactoring
+        - Add ordering
+        - complete FE refactor
+            - ordering on subgoals: target date, urgency, importance, and eisenhower score
+            - fix link to parent on each goal when null 
+    - Create a title dynamic property on Action (what for?)
+    - Goal Edit
+        - Fix bug: some sorts on Subgoals dont work
+    - clickable datagrid rows on all edit views
+        - https://marmelab.com/react-admin/List.html#the-datagrid-component
+- Charts    
+    - Create Progress against goal
+    - Create IntentionAlignment
+    - Create services to create chart data, plus required API infrastructure - generic?
+    - Eisenhower Matrix
+        - filter by parent goal
+- workout
+    - Exercise (Type)
+    - Workout
+      - Set
+        - Repetition
+- Meal Planning
+- Habits (Actions -> Habits refactor)
+    - 'Habit goals' (maintain x for 10 days, increase y by z amount) are Habit Milestones, separate aggregate

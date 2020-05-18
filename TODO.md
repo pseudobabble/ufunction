@@ -64,7 +64,16 @@ then once the target metric on that is reached, create a 'maintain' action, and 
     - clickable datagrid rows on all edit views
         - https://marmelab.com/react-admin/List.html#the-datagrid-component
 - Charts    
-    - Create Progress against goal
+    - Progress Charts
+        - Tree
+            - https://observablehq.com/@d3/collapsible-tree
+                - use DRF to get the nested goals
+            - https://observablehq.com/@d3/radial-tidy-tree
+            - https://observablehq.com/@d3/treemap
+        - Sunburst
+            - https://observablehq.com/@d3/sunburst
+        - Packed Circles
+            - https://observablehq.com/@d3/circle-packing
     - Create IntentionAlignment
     - Create services to create chart data, plus required API infrastructure - generic?
     - Eisenhower Matrix

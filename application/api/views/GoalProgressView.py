@@ -12,7 +12,7 @@ class GoalProgressViewSet(ViewSet):
 
     def list(self, request):
         goal_progress_provider = GoalProgressDataProvider()
-        goal_progress = goal_progress_provider.get_all_progress()
+        goal_progress = goal_progress_provider.get_all_progress([])
         serializer = GoalProgressSerializer(
             instance=goal_progress, many=True)
         return Response(serializer.data)

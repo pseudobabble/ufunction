@@ -32,11 +32,29 @@ class Goal(models.Model):
 
     @property
     def title(self):
-        return '{} {} by {}'.format(self.verb, self.verb_phrase, self.target_date)
+        return '{} {}'.format(self.verb, self.verb_phrase)
 
     @property
     def eisenhower_score(self):
         return (self.urgency * self.importance) / 100
+
+    @property
+    def is_parent(self):
+        if not self.parent_goal:
+            return True
+        else:
+            return False
+
+    @property
+    def num_title_chars(self):
+        return len(self.title)
+
+    @property
+    def title_truncated(self):
+        truncated = self.title[:20]
+        with_elipsis = truncated + '...'
+
+        return with_elipsis
 
     class Meta:
         verbose_name = u"Goal"

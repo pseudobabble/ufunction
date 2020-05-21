@@ -24,6 +24,7 @@ class Goal(models.Model):
     urgency = models.FloatField('Urgency', null=True) # TODO eisenhower ordering 17/05/2020 10:41: Add mix/max constraints
     importance = models.FloatField('Importance', null=True) # TODO eisenhower ordering 17/05/2020 10:41: Add mix/max constraints
     complete = models.BooleanField(u"Complete?", default=False)
+    position = models.IntegerField(u"Position", default=1, null=True)
     created_date = models.DateTimeField(u"Date Created", auto_now_add=True)
     updated_date = models.DateTimeField(u"Date Updated", auto_now=True)
 

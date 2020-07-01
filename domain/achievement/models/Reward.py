@@ -14,7 +14,7 @@ class Reward(models.Model):
     created_date = models.DateTimeField(u"Date Created", auto_now_add=True)
     updated_date = models.DateTimeField(u"Date Updated", auto_now=True)
 
-    # TODO Improve 28/12/18 10:40: Do I want related links, images, etc?
+
 
     class Meta:
         verbose_name = u"Reward"

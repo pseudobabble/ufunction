@@ -37,4 +37,4 @@ class Action(models.Model):
     def __unicode__(self):
         return u"%s" % (self.action_verb)
 
-    # TODO  30/01/2020 17:08: Create a virtual property for the name or title of the action
+

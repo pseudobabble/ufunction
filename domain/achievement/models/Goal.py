@@ -21,8 +21,8 @@ class Goal(models.Model):
         help_text='Describe what it looks like when you have achieved the goal',
         blank=True
     )
-    urgency = models.FloatField('Urgency', null=True) # TODO eisenhower ordering 17/05/2020 10:41: Add mix/max constraints
-    importance = models.FloatField('Importance', null=True) # TODO eisenhower ordering 17/05/2020 10:41: Add mix/max constraints
+    urgency = models.FloatField('Urgency', null=True)
+    importance = models.FloatField('Importance', null=True)
     complete = models.BooleanField(u"Complete?", default=False)
     position = models.IntegerField(u"Position", default=1, null=True)
     created_date = models.DateTimeField(u"Date Created", auto_now_add=True)

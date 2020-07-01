@@ -82,3 +82,9 @@ then once the target metric on that is reached, create a 'maintain' action, and 
 - Meal Planning
 - Habits (Actions -> Habits refactor)
     - 'Habit goals' (maintain x for 10 days, increase y by z amount) are Habit Milestones, separate aggregate
+
+
+# TODO note 17/05/2020 12:59: How to filter on a calculated field/virtual property (but it doesnt make a diff to the value on FE?)
+# TODO  30/01/2020 17:08: Create a virtual property for the name or title of the Action
+# TODO eisenhower ordering 17/05/2020 10:41: Add mix/max constraints Goal urgency/importance
+# TODO Improve 28/12/18 10:40: Do I want related links, images, etc? on Reward

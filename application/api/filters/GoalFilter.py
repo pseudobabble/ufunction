@@ -31,7 +31,7 @@ class GoalFilter(FilterSet):
             'subgoals'
         ]
 
-    # TODO note 17/05/2020 12:59: How to filter on a calculated field/virtual property (but it doesnt make a diff to the value on FE?)
+
 
     def filter_eisenhower_score(self, queryset, value, name):
         if value:
